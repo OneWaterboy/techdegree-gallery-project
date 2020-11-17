@@ -21,3 +21,21 @@ input[type="search"]::placeholder{
     text-align: center;
     font-size: 1.5rem;
 }
+
+
+/*==================================
+Gallery Styling and Layout
+==================================*/
+
+.gallery{
+    display: grid;
+    margin: 0 auto;
+    padding-top: 60px;
+    justify-items: center;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr) ;
+    row-gap: 20px;
+    column-gap: 0px;
+}
+
+
