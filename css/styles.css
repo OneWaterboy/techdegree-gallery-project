@@ -11,16 +11,22 @@ Search Box Styling
     margin: 0 auto;
     height: 30px;
     width: 50%;
-    max-width: 400px;
+    max-width: 600px;
     border-radius: 5px;
     margin-top: 20px;
     height: 3em;
+    border: 1px solid lightgray
 }
 
 input[type="search"]::placeholder{
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-top: 5px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+#search {
+    padding-left: 10px;
 }
 
 
@@ -34,7 +40,7 @@ Gallery Styling and Layout
     padding-top: 60px;
     justify-items: center;
     width: 70%;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     row-gap: 2em;
 }
 
