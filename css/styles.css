@@ -16,3 +16,8 @@ Search Box Styling
     border: 3px solid blue;
     height: 3em;
 }
+
+input[type="search"]::placeholder{
+    text-align: center;
+    font-size: 1.5rem;
+}
