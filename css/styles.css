@@ -12,14 +12,15 @@ Search Box Styling
     height: 30px;
     width: 50%;
     max-width: 400px;
-    border-radius: 20px;
-    border: 3px solid blue;
+    border-radius: 5px;
+    margin-top: 20px;
     height: 3em;
 }
 
 input[type="search"]::placeholder{
     text-align: center;
     font-size: 1.5rem;
+    padding-top: 5px;
 }
 
 
@@ -32,10 +33,9 @@ Gallery Styling and Layout
     margin: 0 auto;
     padding-top: 60px;
     justify-items: center;
-    width: 80%;
-    grid-template-columns: repeat(4, 1fr) ;
-    row-gap: 20px;
-    column-gap: 0px;
+    width: 70%;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    row-gap: 2em;
 }
 
 

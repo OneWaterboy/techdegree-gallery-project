@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/baguetteBox.min.css">
     <title>Photo Gallery | Techdegree</title>
 </head>
 <body>
@@ -11,45 +12,50 @@
         <input type="search" name="search" id="search" placeholder="Find A Hike">
     </div>
     <div class="gallery">
-        <a href="../photos/01.jpg" data-caption="Image caption">
-            <img src="../photos/thumbnails/01.jpg" alt="First image">
+        <a href="../photos/01.jpg" data-caption="Image caption" class="image">
+            <img src="../photos/thumbnails/01.jpg" alt="Firs class="image"t image">
         </a>
-        <a href="../photos/02.jpg" data-caption="Image caption">
+        <a href="../photos/02.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/02.jpg" alt="First image">
         </a>
-        <a href="../photos/03.jpg" data-caption="Image caption">
+        <a href="../photos/03.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/03.jpg" alt="First image">
         </a>
-        <a href="../photos/04.jpg" data-caption="Image caption">
+        <a href="../photos/04.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/04.jpg" alt="First image">
         </a>
-        <a href="../photos/05.jpg" data-caption="Image caption">
+        <a href="../photos/05.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/05.jpg" alt="First image">
         </a>
-        <a href="../photos/06.jpg" data-caption="Image caption">
+        <a href="../photos/06.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/06.jpg" alt="First image">
         </a>
-        <a href="../photos/07.jpg" data-caption="Image caption">
+        <a href="../photos/07.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/07.jpg" alt="First image">
         </a>
-        <a href="../photos/08.jpg" data-caption="Image caption">
+        <a href="../photos/08.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/08.jpg" alt="First image">
         </a>
-        <a href="../photos/09.jpg" data-caption="Image caption">
+        <a href="../photos/09.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/09.jpg" alt="First image">
         </a>
-        <a href="../photos/10.jpg" data-caption="Image caption">
+        <a href="../photos/10.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/10.jpg" alt="First image">
         </a>
-        <a href="../photos/11.jpg" data-caption="Image caption">
+        <a href="../photos/11.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/11.jpg" alt="First image">
         </a>
-        <a href="../photos/12.jpg" data-caption="Image caption">
+        <a href="../photos/12.jpg" data-caption="Image caption" class="image">
             <img src="../photos/thumbnails/12.jpg" alt="First image">
         </a>
     </div>
     
-    <script src="js/searchFilter.js"></script>
-    <script src="js/baguetteBox.min.js" async></script>
+    <script src="../js/searchFilter.js"></script>
+    <script src="../js/baguetteBox.min.js" async></script>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+        </script>
 </body>
 </html>
